@@ -1,0 +1,17 @@
+version: "3"
+services: 
+    kollendb:
+        image: mcr.microsoft.com/mssql/server
+        env_file: .env
+        environment: 
+            SA_PASSWORD: ${SA_PASSWORD}
+            ACCEPT_EULA: ${ACCEPT_EULA}
+    api:
+        container_name: api
+        build: 
+            context: .
+            dockerfile: backend/Dockerfile
+        ports: 
+            - "5000:5000"
+        depends_on: 
+            - kollendb
