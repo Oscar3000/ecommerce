@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+
+.btn {
+    padding: $paragraph;
+    background-color: $kollen-color;
+    border-color: $kollen-color;
+    color: $defaultTextColor;
+    border-radius: $border-radius;
+    box-shadow: 1px 1px $black3;
+}
