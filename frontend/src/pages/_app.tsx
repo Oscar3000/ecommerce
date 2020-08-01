@@ -1,4 +1,4 @@
-import "../styles/globals.scss";
+import "../styles/common.scss";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
