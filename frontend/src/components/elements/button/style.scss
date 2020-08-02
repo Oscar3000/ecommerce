@@ -6,5 +6,30 @@
     border-color: $kollen-color;
     color: $defaultTextColor;
     border-radius: $border-radius;
-    box-shadow: 1px 1px $black3;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: $font-size-16;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    border: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-decoration: none;
 }
+
+button:hover,
+button:focus {
+    background: $tertiaryBackgroundColor;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+

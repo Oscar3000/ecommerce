@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ctx from "classnames";
 import "./style.scss";
 interface Props {
     name: string;
@@ -6,7 +7,7 @@ interface Props {
 }
 const Button = (props: Props) => {
     return (
-        <button onClick={props.onClick} className="btn">
+        <button onClick={props.onClick} className={ctx("btn")}>
             {props.name}
         </button>
     );
