@@ -15,6 +15,11 @@ storiesOf("Story Card", module).add("two cards", () => {
                 imgSrc={require("../../../../public/Images/Full.jpg")}
                 descritpion="Aliquam ornare mauris quis sapien interdum euismod. Nullam a elementum odio. Vivamus vestibulum bibendum orci, eget ultricies mi luctus et. Nulla fermentum, leo ac..."
             />
+            <StoryCard
+                title="Spring Vibes"
+                imgSrc={require("../../../../public/Images/Full.jpg")}
+                descritpion="Aliquam ornare mauris quis sapien interdum euismod. Nullam a elementum odio. Vivamus vestibulum bibendum orci, eget ultricies mi luctus et. Nulla fermentum, leo ac..."
+            />
         </div>
     );
 });

@@ -1,7 +1,9 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/breakpoints.scss";
 
+
 .block {
+  position: relative;
 .img_src,
 .img_block {
     position: absolute;

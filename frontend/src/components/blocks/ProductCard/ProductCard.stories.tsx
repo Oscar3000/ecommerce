@@ -1,5 +1,5 @@
 import * as React from "react";
-import ItemCard from "./index";
+import ProductCard from "./index";
 import { storiesOf } from "@storybook/react";
 import "../../../styles/bootstrap-grid.scss";
 import "@fortawesome/fontawesome-free/js/fontawesome";
@@ -10,7 +10,7 @@ import "@fortawesome/fontawesome-free/js/brands";
 storiesOf("Product Card", module).add("two cards", () => {
     return (
         <div className="row">
-            <ItemCard
+            <ProductCard
                 product={{
                     name: "Jacket",
                     mainImg: require("../../../../public/Images/Full.jpg"),
@@ -19,7 +19,7 @@ storiesOf("Product Card", module).add("two cards", () => {
                     labels: ["new", "sale"],
                 }}
             />
-            <ItemCard
+            <ProductCard
                 product={{
                     name: "Jacket",
                     mainImg: require("../../../../public/Images/Full.jpg"),

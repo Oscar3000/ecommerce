@@ -4,6 +4,11 @@
 .ProductCard {
     padding-bottom: $spacing-2x;
 
+    &:hover &__cart{
+      bottom: -8px;
+      visibility: visible;
+    }
+
     .card-header{
         height: 190px;
         position: relative;
@@ -39,9 +44,11 @@
 
     &__cart {
         position: absolute;
-        bottom: -8px;
+        bottom: -26px;
         right: 8px;
         z-index: 2;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
 
         & > span {
             background-color: $kollen_color;

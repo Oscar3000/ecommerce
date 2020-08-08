@@ -1,4 +1,5 @@
 import React from "react";
+import cx from "classnames";
 
 interface LinkProps {
     route: string;
@@ -6,6 +7,7 @@ interface LinkProps {
     onClick?: (e: React.MouseEvent) => void;
     newWindow?: boolean;
     children?: any;
+    className?: string;
 }
 
 const handleOnClick = (
@@ -35,9 +37,14 @@ const handleOnClick = (
     }
 };
 
-const Link: React.FC<LinkProps> = ({ route, onClick, newWindow, children, ...props }: LinkProps) => {
+const Link: React.FC<LinkProps> = ({ className, route, onClick, newWindow, children, ...props }: LinkProps) => {
     return (
-        <a href={route} onClick={onClick ? onClick : (e) => handleOnClick(e, route, newWindow)} {...props}>
+        <a
+            href={route}
+            className={cx(className)}
+            onClick={onClick ? onClick : (e) => handleOnClick(e, route, newWindow)}
+            {...props}
+        >
             {children}
         </a>
     );

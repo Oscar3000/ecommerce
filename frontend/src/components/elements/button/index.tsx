@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ctx from "classnames";
 import "./style.scss";
 interface Props {

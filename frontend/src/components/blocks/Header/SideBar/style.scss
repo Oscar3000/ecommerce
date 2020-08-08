@@ -1,0 +1,75 @@
+@import "../../../../styles/breakpoints.scss";
+@import "../../../../styles/variables.scss";
+
+.sidebar {
+    display: none;
+
+    @include breakpoint(mobile){
+        display: grid;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+        & > .item {
+            margin: 5px 16px;
+            text-decoration: none;
+            padding: 12px 8px;
+            color: $black;
+            border-bottom: 1px solid lightgray;
+
+            & > button {
+                padding: 16px 0px;  
+                border: none;
+                cursor: pointer;
+                background: none;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            &:hover .content{
+                visibility: visible;
+                height: 150px;
+                opacity: 1;
+                background: none;
+            }
+            & > .content {
+                display: block;
+                visibility: hidden;
+                min-width: 160px;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                height: 0px;
+                padding: 0 12px;
+
+                & > a {
+                    display: block;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    color: $black;
+                }
+                & > a:hover {
+                     background-color: $kollen_color;
+                    color: white;
+                 }
+            }
+        }
+    }
+    
+}
+
+/* defining an animation '@keyframes', naming the animation 'fadeIn': */
+@keyframes fadeIn {
+    /* the starting point: */
+    from {
+        /* the starting property and property-value: */
+        opacity: 0;
+   }
+    /* the finishing point: */
+    to {
+        /* the finishing property and property-value: */
+        opacity: 1;
+    }
+}
+
