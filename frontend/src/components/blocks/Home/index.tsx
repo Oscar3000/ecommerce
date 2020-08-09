@@ -1,11 +1,17 @@
 import React from "react";
-
+import Header from "../Header";
+import Footer from "../Footer";
 interface Props {
     products?: [];
 }
 
 const HomePage = (props: Props) => {
-    return <div>Home Page</div>;
+    return (
+        <>
+            <Header />
+            <Footer />
+        </>
+    );
 };
 
 export default HomePage;

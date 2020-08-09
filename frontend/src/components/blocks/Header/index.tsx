@@ -13,7 +13,7 @@ const Header = (props: any) => {
                     {/** Brand name */}
                     <div>
                         <Link route={"#"}>
-                            <img className="navbar__brand__img" src={require("../../../../public/Images/logo.png")} />
+                            <img className="navbar__brand__img" src="/Images/logo.png" />
                         </Link>
                     </div>
                     {/** Sidebar button */}

@@ -12,14 +12,21 @@ module.exports = {
                     },
                 },
             ],
-        });
-        config.module.rules.push({
+        },
+        {
+            test: /\.(woff|woff2|eot|ttf)$/,
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]',
+            },
+            include: path.resolve(__dirname, '../public/fonts')
+        },
+        {
             test: /\.scss$/,
             use: ['style-loader', 'css-loader', 'sass-loader'],
             include: path.resolve(__dirname, '../'),
           });
-
-        config.resolve.extensions.push(".ts", ".tsx",".scss");
+        config.resolve.extensions.push(".ts", ".tsx",".scss",".ttf");
         return config;
     },
 };

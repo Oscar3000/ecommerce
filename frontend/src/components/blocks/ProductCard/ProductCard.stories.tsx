@@ -22,7 +22,7 @@ storiesOf("Product Card", module).add("two cards", () => {
             <ProductCard
                 product={{
                     name: "Jacket",
-                    mainImg: require("../../../../public/Images/Full.jpg"),
+                    mainImg: require("../../../../public/Images/pexels-godisable-jacob-953266.jpg"),
                     price: 100,
                     discount: 0.3,
                     labels: ["new", "stock"],

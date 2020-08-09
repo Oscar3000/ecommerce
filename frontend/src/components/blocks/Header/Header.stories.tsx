@@ -6,7 +6,7 @@ storiesOf("Navbar", module).add("with three items", () => {
     return (
         <>
             <Header />
-            <ImageBlock ImgSrc={require("../../../../public/Images/ol.jpg")} text="Welcome to Kollen" />
+            <ImageBlock ImgSrc={require("../../../../public/Images/morocco_dresses.jpg")} text="Welcome to Kollen" />
         </>
     );
 });

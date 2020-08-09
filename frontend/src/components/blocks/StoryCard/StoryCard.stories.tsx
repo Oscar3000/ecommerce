@@ -17,7 +17,7 @@ storiesOf("Story Card", module).add("two cards", () => {
             />
             <StoryCard
                 title="Spring Vibes"
-                imgSrc={require("../../../../public/Images/Full.jpg")}
+                imgSrc={require("../../../../public/Images/pexels-dazzle-jam-1038043.jpg")}
                 descritpion="Aliquam ornare mauris quis sapien interdum euismod. Nullam a elementum odio. Vivamus vestibulum bibendum orci, eget ultricies mi luctus et. Nulla fermentum, leo ac..."
             />
         </div>
