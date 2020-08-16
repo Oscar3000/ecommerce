@@ -7,8 +7,16 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "format": "prettier --write */**/*.{js,jsx,ts,tsx}"
+    "fix": "yarn format && yarn fix-ts-lint && yarn fix-css-lint",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "yarn lint:ts && yarn lint:js && yarn lint:css",
+    "check-format": "prettylint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:ts": "tslint --project ./tsconfig.json -c tslint.json \"src/**/*.ts*\"",
+    "lint:js": "eslint '*/**/*.{js,jsx}'",
+    "lint:css": "stylelint \"src/**/*.{css,scss}\"",
+    "fix-css-lint": "stylelint --fix \"src/**/*.{css,scss}\"",
+    "fix-ts-lint": "tslint --fix --project ./tsconfig.json -c tslint.json \"src/**/*.ts*\"",
+    "fix-js-lint": "eslint --fix \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
@@ -40,8 +48,15 @@
     "eslint-plugin-react": "^7.20.4",
     "file-loader": "^6.0.0",
     "prettier": "^2.0.5",
+    "prettylint": "^1.0.0",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^5.0.0",
     "typescript": "^3.9.7",
     "url-loader": "^4.1.0"
   }

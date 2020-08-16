@@ -12,7 +12,7 @@ const SideBar = (props: any) => {
                 <button>
                     Men
                     <span>
-                        <i className="fa fa-angle-down" aria-hidden="true"></i>
+                        <i className="fa fa-angle-down" aria-hidden="true" />
                     </span>
                 </button>
                 <div className="content">
@@ -25,7 +25,7 @@ const SideBar = (props: any) => {
                 <button>
                     Women
                     <span>
-                        <i className="fa fa-angle-down" aria-hidden="true"></i>
+                        <i className="fa fa-angle-down" aria-hidden="true" />
                     </span>
                 </button>
                 <div className="content">
@@ -38,7 +38,7 @@ const SideBar = (props: any) => {
                 Blog
             </Link>
             <Link route={"#"} className="item">
-                <i className="fas fa-shopping-cart" aria-hidden="true"></i>
+                <i className="fas fa-shopping-cart" aria-hidden="true" />
             </Link>
         </div>
     );

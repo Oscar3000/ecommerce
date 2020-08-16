@@ -2,74 +2,76 @@
 @import "../../../../styles/variables.scss";
 
 .sidebar {
-    display: none;
+  display: none;
 
-    @include breakpoint(mobile){
-        display: grid;
-        position: absolute;
-        z-index: 1;
-        background-color: white;
+  @include breakpoint(mobile) {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: grid;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    & > .item {
+      border-bottom: 1px solid lightgray;
+      color: $black;
+      margin: 5px 16px;
+      padding: 12px 8px;
+      text-decoration: none;
+
+      & > button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
         width: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
 
-        & > .item {
-            margin: 5px 16px;
-            text-decoration: none;
-            padding: 12px 8px;
-            color: $black;
-            border-bottom: 1px solid lightgray;
+      & > .content {
+        display: block;
+        height: 0;
+        min-width: 160px;
+        opacity: 0;
+        padding: 0 12px;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
 
-            & > button {
-                padding: 16px 0px;  
-                border: none;
-                cursor: pointer;
-                background: none;
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-            }
-            &:hover .content{
-                visibility: visible;
-                height: 150px;
-                opacity: 1;
-                background: none;
-            }
-            & > .content {
-                display: block;
-                visibility: hidden;
-                min-width: 160px;
-                opacity: 0;
-                transition: all 0.3s ease-in-out;
-                height: 0px;
-                padding: 0 12px;
-
-                & > a {
-                    display: block;
-                    padding: 12px 16px;
-                    text-decoration: none;
-                    color: $black;
-                }
-                & > a:hover {
-                     background-color: $kollen_color;
-                    color: white;
-                 }
-            }
+        & > a {
+          color: $black;
+          display: block;
+          padding: 12px 16px;
+          text-decoration: none;
         }
+
+        & > a:hover {
+          background-color: $kollen_color;
+          color: white;
+        }
+      }
+
+      &:hover .content {
+        background: none;
+        height: 150px;
+        opacity: 1;
+        visibility: visible;
+      }
     }
-    
+  }
 }
 
 /* defining an animation '@keyframes', naming the animation 'fadeIn': */
 @keyframes fadeIn {
-    /* the starting point: */
-    from {
-        /* the starting property and property-value: */
-        opacity: 0;
-   }
-    /* the finishing point: */
-    to {
-        /* the finishing property and property-value: */
-        opacity: 1;
-    }
-}
+  /* the starting point: */
+  from {
+    /* the starting property and property-value: */
+    opacity: 0;
+  }
 
+  /* the finishing point: */
+  to {
+    /* the finishing property and property-value: */
+    opacity: 1;
+  }
+}

@@ -13,7 +13,7 @@ const Menu = (props: Props) => {
             <button>
                 {props.title}
                 <span>
-                    <i className="fa fa-angle-down" aria-hidden="true"></i>
+                    <i className="fa fa-angle-down" aria-hidden="true" />
                 </span>
             </button>
             <div className="menu__content">{props.children}</div>

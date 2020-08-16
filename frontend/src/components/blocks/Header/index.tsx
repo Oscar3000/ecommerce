@@ -18,7 +18,7 @@ const Header = (props: any) => {
                     </div>
                     {/** Sidebar button */}
                     <button className="navbar__button" onClick={() => toggleSideBar(!sidebar)}>
-                        <i className="fas fa-bars"></i>
+                        <i className="fas fa-bars" />
                     </button>
                 </div>
                 {/** Menu */}
@@ -40,7 +40,7 @@ const Header = (props: any) => {
                         Blog
                     </Link>
                     <Link route={"#"} className="item">
-                        <i className="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <i className="fas fa-shopping-cart" aria-hidden="true" />
                     </Link>
                 </div>
                 {/** Sidebar */}

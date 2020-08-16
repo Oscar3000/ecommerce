@@ -1,35 +1,34 @@
 @import "../../../styles/variables.scss";
 
 .btn {
-    padding: $paragraph;
-    background-color: $kollen-color;
-    border-color: $kollen-color;
-    color: $defaultTextColor;
-    border-radius: $border-radius;
-    text-align: center;
-    display: block;
-    width: 100%;
-    font-size: $font-size-16;
-    cursor: pointer;
-    font-weight: 700;
-    transition: all .3s ease-in-out;
-    border: none; 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: $kollen-color;
+  border: none;
+  border-color: $kollen-color;
+  border-radius: $border-radius;
+  color: $defaultTextColor;
+  cursor: pointer;
+  display: block;
+  font-size: $font-size-16;
+  font-weight: 700;
+  padding: $paragraph;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
 }
 
 button:hover,
 button:focus {
-    background: $tertiaryBackgroundColor;
+  background: $tertiaryBackgroundColor;
 }
 
 button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+  outline: 1px solid #fff;
+  outline-offset: -4px;
 }
 
 button:active {
-    transform: scale(0.99);
+  transform: scale(0.99);
 }
-

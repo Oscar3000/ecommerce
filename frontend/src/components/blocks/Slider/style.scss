@@ -1,60 +1,61 @@
 .slick-slide {
-    img {
-      height: 400px;
-    }
+  img {
+    height: 400px;
+  }
 }
 
 .slider {
-    background-color: #f5f5f5;
-    border-radius: 5px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  height: 400px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  width: 100%;
+
+  &:after {
+    background-color: rgba(0, 0, 0, 0);
+    content: "";
+    display: block;
     height: 400px;
-    margin: 0;
+    left: 0;
     overflow: hidden;
-    position: relative;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease-in-out;
     width: 100%;
+  }
 
-    &:after {
-        background-color: rgba(0, 0, 0, 0);
-        content: "";
-        display: block;
-        height: 400px;
-        left: 0;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        transition: all 0.2s ease-in-out;
-        width: 100%;
-      }
+  &:hover .slick-next,
+  &:hover .slick-prev {
+    display: block !important;
+    z-index: 1;
+  }
 
-    &:hover .slick-next,
-    &:hover .slick-prev {
-      display: block !important;
-      z-index: 1;
-    }
+  .slick-prev:before,
+  .slick-next:before {
+    color: inherit;
+    font-size: 10px;
+  }
 
-    .slick-prev:before,
-    .slick-next:before {
-      color: inherit;
-      font-size: 10px;
-    }
-      .arrow {
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        height: 13px;
-        padding: 3px;
-        width: 13px;
-      }
-     
-      .right {
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-      }
-     
-      .left {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg);
-      }
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    height: 13px;
+    padding: 3px;
+    width: 13px;
+  }
+
+  .right {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .left {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
 }

@@ -2,103 +2,105 @@
 @import "../../../styles/breakpoints.scss";
 
 .footer img {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .footer {
-    background-color: #363636;
-    padding-bottom: 12px;
-    border-top: 1px solid #eaeaea;
-    font-family: 'Roboto', sans-serif;
-    
-    &__follow {
-        display: block;
-        margin: 12px 0;
+  background-color: #363636;
+  border-top: 1px solid #eaeaea;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 12px;
 
-        & > h5 {
-            display: block;
-            text-transform: uppercase;
-            font-size: $font-size-20;
-            line-height: 1.2;
-            margin-bottom: 25px;
-            padding-top: 20px;
-            color: white;
+  &__follow {
+    display: block;
+    margin: 12px 0;
+
+    & > h5 {
+      color: white;
+      display: block;
+      font-size: $font-size-20;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      padding-top: 20px;
+      text-transform: uppercase;
+    }
+
+    & > .socialList {
+      display: flex;
+
+      & > .social-item {
+        margin-right: 15px;
+
+        a {
+          color: white;
         }
+      }
+    }
+  }
 
-        & > .socialList {
-            display: flex;
-            
-            & > .social-item {
-                margin-right: 15px;
-                a {
-                    color: white;
-                }
-            }
+  &__content {
+    p {
+      color: #f4f4f4;
+      line-height: $font-size-28;
+      margin: 0 0 15px 0;
+    }
 
-            & > .social-item:hover a {
-                color: $kollen_color;
-            }
+    h5 {
+      color: white;
+      display: block;
+      font-size: $font-size-14;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      padding-top: 20px;
+      text-transform: uppercase;
+    }
+
+    & .payment__methods {
+      display: flex;
+      flex-wrap: wrap;
+
+      & .col-4 {
+        padding: 4px;
+
+        svg {
+          color: white;
+          cursor: pointer;
+          font-size: 1.5em;
         }
+      }
     }
 
-    &__content {
+    & > .col > .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-            p {
-                line-height: $font-size-28;
-                color: #f4f4f4;
-                margin: 0px 0px 15px 0px;
-            }
-    
-            h5 {
-                display: block;
-                text-transform: uppercase;
-                font-size: $font-size-14;
-                line-height: 1.2;
-                margin-bottom: 25px;
-                padding-top: 20px;
-                color: white;
-            }
-
-            & .payment__methods {
-                display: flex;
-                flex-wrap: wrap;
-                & .col-4 {
-                    padding: 4px;
-                    svg {
-                        font-size: 1.5em;
-                        cursor: pointer;
-                        color: white;
-                    }
-                }
-            }
-
-            & > .col > .list {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-
-                & > a {
-                    text-decoration: none;
-                    color: white;
-                    margin: 5px 0;
-
-                    &:hover {
-                        color: $kollen_color;
-                    }
-                }
-            }
-    }
-
-    &__divider {
-        border-top: 1px solid #464646;
-        margin: 16px;
-        margin-top: 20px;
-    }
-
-    &__copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      & > a {
         color: white;
+        margin: 5px 0;
+        text-decoration: none;
+
+        &:hover {
+          color: $kollen_color;
+        }
+      }
     }
+  }
+
+  &__divider {
+    border-top: 1px solid #464646;
+    margin: 16px;
+    margin-top: 20px;
+  }
+
+  &__copyright {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__follow > .socialList > .social-item:hover a {
+    color: $kollen_color;
+  }
 }

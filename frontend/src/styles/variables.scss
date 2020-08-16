@@ -1,7 +1,7 @@
 /* Fonts */
-$primary-font: sans-serif,"Source Sans Pro", "Helvetica Neue", Helvetica, Arial;
+$primary-font: sans-serif,"Source Sans Pro", "Helvetica Neue", helvetica, arial;
 
-$kollen_color: #00FFFF;
+$kollen_color: #0ff;
 $red: #e30613;
 $font: 15px;
 $h1: 48px;
@@ -25,31 +25,29 @@ $tertiaryBorderColor: #008077;
 $containerBackgroundColor: #00b8ab;
 $containerBorderColor: #102423;
 $errorEyeColor: #800008;
-$black: #2E384D;
-$black2: #69707F;
-$black3: #8798AD;
-$white: #FFFFFF;
-$gray: #BFC5D2;
-$gray2: #F4F6FC;
-$gray3: #EEF3F5;
+$black: #2e384d;
+$black2: #69707f;
+$black3: #8798ad;
+$white: #fff;
+$gray: #bfc5d2;
+$gray2: #f4f6fc;
+$gray3: #eef3f5;
 $darkGray: #404040;
-$shadow: rgba(46,91,255,0.07);
-$accent: #F3534A;
-$primary: #0275D8;
-$secondary: #2BDA8E;
-$success: #5CB85C;
-$warning: #F0AD4E;
+$shadow: rgba(46, 91, 255, 0.07);
+$accent: #f3534a;
+$primary: #0275d8;
+$secondary: #2bda8e;
+$success: #5cb85c;
+$warning: #f0ad4e;
 $error: #e0525b;
 $danger: #800008;
 $gold: #dbb132;
 $lightGold: #f2be23;
 $steel: #626468;
 
-
 /* Default styles */
 
 $SHADOW-DEFAULT: 0 1px 4px 0 rgba(177, 178, 180, 0.8);
-
 
 /* typography */
 $font-size-60: 3.75rem;

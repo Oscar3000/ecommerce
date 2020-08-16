@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+
 interface Item {
     icon: string;
     text: string;
@@ -16,7 +16,7 @@ const TextBlock = (props: Props) => {
                 {props.items.map((item, i) => (
                     <div className="col text-item" key={"block" + i}>
                         <div className="row">
-                            <i className={item.icon + "col"}></i>
+                            <i className={item.icon + "col"} />
                             <div className="col" dangerouslySetInnerHTML={{ __html: item.text }} />
                         </div>
                     </div>

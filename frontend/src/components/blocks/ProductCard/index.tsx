@@ -33,7 +33,7 @@ const ItemCard = ({ product }: Props) => {
                 )}
                 <div className="ProductCard__cart">
                     <span>
-                        <i className="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <i className="fas fa-shopping-cart" aria-hidden="true" />
                     </span>
                 </div>
             </div>

@@ -10,22 +10,22 @@ const Footer = (props: any) => {
                 <div className="socialList mt1">
                     <div className="social-item">
                         <Link route="#">
-                            <i className="fab fa-facebook fa-2x white-text"></i>
+                            <i className="fab fa-facebook fa-2x white-text" />
                         </Link>
                     </div>
                     <div className="social-item">
                         <Link route="#">
-                            <i className="fab fa-youtube fa-2x white-text"></i>
+                            <i className="fab fa-youtube fa-2x white-text" />
                         </Link>
                     </div>
                     <div className="social-item">
                         <Link route="#">
-                            <i className="fab fa-instagram fa-2x white-text"></i>
+                            <i className="fab fa-instagram fa-2x white-text" />
                         </Link>
                     </div>
                     <div className="social-item">
                         <Link route="#">
-                            <i className="fab fa-twitter fa-2x white-text"></i>
+                            <i className="fab fa-twitter fa-2x white-text" />
                         </Link>
                     </div>
                 </div>
@@ -39,19 +39,19 @@ const Footer = (props: any) => {
                     </p>
                     <div className="payment__methods">
                         <div className="col-4">
-                            <i className="fab fa-paypal"></i>
+                            <i className="fab fa-paypal" />
                         </div>
                         <div className="col-4">
-                            <i className="fab fa-cc-visa"></i>
+                            <i className="fab fa-cc-visa" />
                         </div>
                         <div className="col-4">
-                            <i className="fab fa-cc-amex"></i>
+                            <i className="fab fa-cc-amex" />
                         </div>
                         <div className="col-4">
-                            <i className="fab fa-cc-jcb"></i>
+                            <i className="fab fa-cc-jcb" />
                         </div>
                         <div className="col-4">
-                            <i className="fab fa-cc-mastercard"></i>
+                            <i className="fab fa-cc-mastercard" />
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ const Footer = (props: any) => {
                     </div>
                 </div>
             </div>
-            <div className="footer__divider"></div>
+            <div className="footer__divider" />
             <div className="footer__copyright">
                 <p className="text-center">&copy;{new Date().getFullYear()} Kollen store. All Rights Reserved</p>
             </div>

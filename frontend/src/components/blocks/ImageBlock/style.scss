@@ -1,38 +1,37 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/breakpoints.scss";
 
-
 .block {
   position: relative;
-.img_src,
-.img_block {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top:0;
-    left:0;
-    
-    .img_src {
-        background-size: cover;
-        transform: translate3d(0px, 0px, 0px);
-    }
-    
-}
 
-.inner {
+  .img_src,
+  .img_block {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .img_src {
+      background-size: cover;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .inner {
     align-items: center;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
+    justify-content: center;
     margin: 0;
     overflow: hidden;
     position: relative;
     width: 100%;
-    justify-content: center;
-    color: white;
-}
+  }
 
-h1 {
+  h1 {
     animation: fadeIn 1s forwards;
     color: white;
     font-size: $font-size-26;

@@ -9,7 +9,7 @@ interface Props {
     placeholder?: JSX.Element;
 }
 
-const inView = (props: Props) => {
+const View = (props: Props) => {
     const [inView, setInView] = useState(false);
 
     function calcInView() {
@@ -30,4 +30,4 @@ const inView = (props: Props) => {
     return props.children;
 };
 
-export default inView;
+export default View;

@@ -1,27 +1,28 @@
 @import "../../../styles/variables.scss";
 
 .ProductLabel {
-    background-color: white;
-    width: 122px;
-    display: block;
-    height: 25px;
-    text-align: center;
-    padding: 3px 2px;
-    margin: 5px 0;
-    border-radius: 4px;
-    box-shadow: 1px 1px 2px $shadow;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px $shadow;
+  display: block;
+  height: 25px;
+  margin: 5px 0;
+  padding: 3px 2px;
+  text-align: center;
+  width: 122px;
 
-    &.stock {
-        background-color: $gold;
-        color: white;
-    }
+  &.stock {
+    background-color: $gold;
+    color: white;
+  }
 
-    &.new {
-        background-color: $red;
-        color: white;
-    }
-    &.sale {
-        background-color: $primary;
-        color: white;
-    }
+  &.new {
+    background-color: $red;
+    color: white;
+  }
+
+  &.sale {
+    background-color: $primary;
+    color: white;
+  }
 }

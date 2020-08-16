@@ -1,74 +1,75 @@
 @import "../../../styles/variables.scss";
 
 .menu {
-    position: relative;
-    display: inline-block;
+  display: inline-block;
+  position: relative;
 
-    & > button {
-        padding: 16px;  
-        border: none;
-        cursor: pointer;
-        background: none;
-        outline: none;
-        font-size: 1em;
+  & > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    outline: none;
+    padding: 16px;
 
-        & > span {
-            margin-left: 5px;
-        }
-
-        &:hover,
-        &:focus,
-        &.focus {
-             outline: none;
-             background: none;
-        }
-        &:active,
-        &.active {
-             background-image: none;
-             outline: 0;
-             -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-                     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-             transform: scale(0.99);
-        }
+    & > span {
+      margin-left: 5px;
     }
 
-    &:hover > button {
-        background-color: $kollen_color;
-        color: $black;
+    &:hover,
+    &:focus,
+    &.focus {
+      background: none;
+      outline: none;
     }
 
-    &:hover &__content{
-        z-index: 1;
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0s, 0s, 0.3s;
+    &:active,
+    &.active {
+      background-image: none;
+      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      outline: 0;
+      transform: scale(0.99);
+    }
+  }
+
+  &:hover > button {
+    background-color: $kollen_color;
+    color: $black;
+  }
+
+  &__content {
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: block;
+    left: 0;
+    min-width: 160px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-3rem);
+    transition: all 0.3s ease-in-out, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    visibility: hidden;
+    z-index: -1;
+
+    & > a {
+      color: $black;
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
     }
 
-    &__content {
-        background-color: white;
-        display: block;
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        top: 100%;
-        left:0;
-        transform: translateY(-3rem);
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        transition: all 0.3s ease-in-out, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-        z-index: -1;
-
-        & > a {
-            display: block;
-            padding: 12px 16px;
-            text-decoration: none;
-            color: $black;
-        }
-        & > a:hover {
-            background-color: $kollen_color;
-            color: white;
-        }
+    & > a:hover {
+      background-color: $kollen_color;
+      color: white;
     }
-    
+  }
+
+  &:hover &__content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+    visibility: visible;
+    z-index: 1;
+  }
 }

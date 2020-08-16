@@ -2,71 +2,72 @@
 @import "../../../styles/breakpoints.scss";
 
 .navbar {
-    background-color: white;
+  background-color: white;
 
-    &__brand {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  &__brand {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-        &__img {
-            backface-visibility: hidden;
-            display: block;
-            height: 100px;
-            image-rendering: auto;
-            object-fit: cover;
-            transform: translateZ(0);
-            transition: all 0.2s ease-in-out;
-            width: 100px;
-        }
-
-        @include breakpoint(mobile) {
-            justify-content: space-between;
-            background-color: $kollen_color;
-
-            &__img {
-                width: 60px;
-                height: 60px;
-            }
-        }
+    &__img {
+      backface-visibility: hidden;
+      display: block;
+      height: 100px;
+      image-rendering: auto;
+      object-fit: cover;
+      transform: translateZ(0);
+      transition: all 0.2s ease-in-out;
+      width: 100px;
     }
 
-    &__button {
-        display: none;
+    @include breakpoint(mobile) {
+      background-color: $kollen_color;
+      justify-content: space-between;
 
-        @include breakpoint(mobile) {
-            display: block;
-            border: none;
-            cursor: pointer;
-            background: none;
-            text-decoration: none;
-            border: 0;
-            padding: 12px;
-            cursor: pointer;
-
-            &:hover,
-            &:focus,
-            &:active {
-                background: none;
-            }
-          }
+      &__img {
+        height: 60px;
+        width: 60px;
+      }
     }
-    &__menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  }
 
-        & > .item {
-            text-decoration: none;
-            padding: 0px 8px;
-            color: $black;
+  &__button {
+    display: none;
 
-            &:hover {
-                color: $kollen_color;
-            }
-        }
-        @include breakpoint(mobile) {
-            display: none;
-        }
+    @include breakpoint(mobile) {
+      background: none;
+      border: none;
+      border: 0;
+      cursor: pointer;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: none;
+      }
     }
+  }
+
+  &__menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    & > .item {
+      color: $black;
+      padding: 0 8px;
+      text-decoration: none;
+
+      &:hover {
+        color: $kollen_color;
+      }
+    }
+
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "selector-pseudo-element-colon-notation": "single",
+    "declaration-colon-newline-after": null,
+    "block-no-empty": null,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "at-rule-no-unknown": null,
+    "order/properties-alphabetical-order": true
+  }
+}
