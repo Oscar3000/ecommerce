@@ -4,11 +4,7 @@
 .ProductCard {
     padding-bottom: $spacing-2x;
 
-    &:hover &__cart{
-      bottom: -8px;
-      visibility: visible;
-    }
-
+  
     .card-header{
         height: 190px;
         position: relative;
@@ -46,8 +42,6 @@
         position: absolute;
         bottom: -26px;
         right: 8px;
-        z-index: 2;
-        visibility: hidden;
         transition: all 0.2s ease-in-out;
 
         & > span {
@@ -64,6 +58,11 @@
                 top: 50%;
                 left: 50%;
             }
+        }
+
+        @include breakpoint(desktop) {
+          opacity: 0;
+          transform: translateY(10px);
         }
     }
 
@@ -115,6 +114,25 @@
     
         .PropertyMetric {
           margin-bottom: 6px;
+        }
+      }
+
+      @include breakpoint(desktop) {
+        &:hover {
+          .ProductCard__image {
+            & > img {
+              transform: scale(1.05);
+            }
+    
+            &:after {
+              background-color: rgba(0, 0, 0, 0.1);
+            }
+          }
+    
+          .ProductCard__cart {
+            opacity: 1;
+            transform: translateY(-12px);
+          }
         }
       }
 }
